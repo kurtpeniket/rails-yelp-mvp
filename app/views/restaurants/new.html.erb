@@ -1,0 +1,8 @@
+<%= simple_form_for(@restaurant) do |t| %>
+    <%= t.label :name %>
+    <%= t.text_field :name %>
+    <%= t.label :address %>
+    <%= t.text_field :address %>
+    <%= t.input :category, collection: Restaurant::ARRAY %>
+    <%= t.submit %>
+<% end %>
